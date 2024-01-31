@@ -1,0 +1,10 @@
+
+body{
+    background-color: rgb(200, 221, 245);
+}
+.bg-body-tertiary{
+background-color: blue;
+}
+.head{
+    background-color: blue;
+}
