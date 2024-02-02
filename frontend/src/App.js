@@ -1,28 +1,49 @@
-import {BrowserRouter,Routes,Route} from 'react-router-dom'
-import HomePage from './pages/HomePage';
-import Login from './pages/Login';
-import Register from './pages/Register';
-import AppointMent from './pages/AppointMent';
-import Surgeons from './pages/Surgeons';
-import Services from './pages/Services';
-import AboutUs from './pages/AboutUs';
+import { Grid, Box} from "@mui/material";
+import Navbar from "./Components/User/Navbar/Navbar";
+import { Routes, Route } from "react-router-dom";
+import { BrowserRouter } from 'react-router-dom';
+
+import "./App.css";
+import LoginForm from "./Components/User/Login/Login";
+import SignUpForm from "./Components/User/Login/Signin";
+import Screen from "./Components/User/pages/homecontent/Homepage";
+import Doctorlogin from "./Components/User/Login/Doctorlogin";
+
+import { useState} from "react";
+
 
 function App() {
+
+
   return (
-  <>
-  <BrowserRouter>
-  <Routes>
-  <Route path='/' element={<HomePage/>} />
-  <Route path='login' element={<Login/>} />
-  <Route path='register' element={<Register/>} />
-  <Route path='appointment' element={<AppointMent/>}/>
-  <Route path='surgeons' element={<Surgeons/>}/>
-  <Route path='services' element={<Services/>}/>
-  <Route path='aboutus' element={<AboutUs/>}/>
-  </Routes>
-  </BrowserRouter>
-  </>
+      
+    <Grid container >
+        <>
+          <Grid item xs={12} >
+            <Navbar sx={{ backgroundColor:"#acb2bd"}} />
+          </Grid>
+          <Grid item xs={12} sx={{ minHeight: '80vh' , backgroundColor:"#dcfcec",  }}>
+          <Box>
+
+              <Routes>
+                <Route path="/" Component={Screen} />
+                <Route path="/login" Component={LoginForm} />
+                <Route path="/doctorlogin" Component={Doctorlogin} />
+                <Route path="/SignUp" Component={SignUpForm} />
+               </Routes>
+
+           </Box>
+          </Grid>
+          <Grid item xs={12} sx={{height:'10vh'}}>
+            {/* <Footer /> */}
+          </Grid>
+        </>
+      {/* )} */}
+    </Grid>
   );
-}
+};
+
+
+
 
 export default App;
