@@ -2,12 +2,13 @@ import { Grid, Box} from "@mui/material";
 import Navbar from "./Components/User/Navbar/Navbar";
 import { Routes, Route } from "react-router-dom";
 import { BrowserRouter } from 'react-router-dom';
-
+import Doctor from "./Components/User/pages/Doctor/Doctor";
 import "./App.css";
 import LoginForm from "./Components/User/Login/Login";
 import SignUpForm from "./Components/User/Login/Signin";
 import Screen from "./Components/User/pages/homecontent/Homepage";
 import Doctorlogin from "./Components/User/Login/Doctorlogin";
+import About from "./Components/User/pages/About/About";
 
 import { useState} from "react";
 
@@ -30,6 +31,8 @@ function App() {
                 <Route path="/login" Component={LoginForm} />
                 <Route path="/doctorlogin" Component={Doctorlogin} />
                 <Route path="/SignUp" Component={SignUpForm} />
+                <Route path="/about" Component={About} />
+                <Route path="/doctor" Component={Doctor} />
                </Routes>
 
            </Box>
