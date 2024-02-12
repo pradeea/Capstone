@@ -8,7 +8,8 @@ import LoginForm from "./Components/User/Login/Login";
 import SignUpForm from "./Components/User/Login/Signin";
 import Screen from "./Components/User/pages/homecontent/Homepage";
 import Doctorlogin from "./Components/User/Login/Doctorlogin";
-import About from "./Components/User/pages/About/About";
+import Contact from "./Components/User/pages/Contact";
+//import About from "./Components/User/pages/About/About";
 
 import { useState} from "react";
 
@@ -31,7 +32,7 @@ function App() {
                 <Route path="/login" Component={LoginForm} />
                 <Route path="/doctorlogin" Component={Doctorlogin} />
                 <Route path="/SignUp" Component={SignUpForm} />
-                <Route path="/about" Component={About} />
+                <Route path="/contact" Component={Contact} />
                 <Route path="/doctor" Component={Doctor} />
                </Routes>
 
