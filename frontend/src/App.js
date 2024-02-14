@@ -37,12 +37,9 @@ function App() {
                 <Route path="/SignUp" Component={SignUpForm} />
                 <Route path="/contact" Component={Contact} />
                 <Route path="/doctor" Component={Doctor} />
-<<<<<<< HEAD
                 <Route path="/about" Component={About} />
-=======
                 {/* <Route path="/appointment" Component={Appointment} /> */}
                 <Route path="/form/:id" Component={Form} />
->>>>>>> 4e1e0ac39dceb98e2924bffa9af13a00ff527d51
                </Routes>
 
            </Box>
