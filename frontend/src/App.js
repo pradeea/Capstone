@@ -12,7 +12,6 @@ import About from "./Components/User/pages/About/About";
 // import Appointment from "./Components/User/pages/Doctor/Appointment";
 import Form from "./Components/User/pages/Doctor/Form";
 import Contact from "./Components/User/pages/Contact";
-import About from "./Components/User/pages/About/About";
 
 import { useState} from "react";
 
