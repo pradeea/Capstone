@@ -8,6 +8,9 @@ import LoginForm from "./Components/User/Login/Login";
 import SignUpForm from "./Components/User/Login/Signin";
 import Screen from "./Components/User/pages/homecontent/Homepage";
 import Doctorlogin from "./Components/User/Login/Doctorlogin";
+import About from "./Components/User/pages/About/About";
+// import Appointment from "./Components/User/pages/Doctor/Appointment";
+import Form from "./Components/User/pages/Doctor/Form";
 import Contact from "./Components/User/pages/Contact";
 import About from "./Components/User/pages/About/About";
 
@@ -34,7 +37,12 @@ function App() {
                 <Route path="/SignUp" Component={SignUpForm} />
                 <Route path="/contact" Component={Contact} />
                 <Route path="/doctor" Component={Doctor} />
+<<<<<<< HEAD
                 <Route path="/about" Component={About} />
+=======
+                {/* <Route path="/appointment" Component={Appointment} /> */}
+                <Route path="/form/:id" Component={Form} />
+>>>>>>> 4e1e0ac39dceb98e2924bffa9af13a00ff527d51
                </Routes>
 
            </Box>
