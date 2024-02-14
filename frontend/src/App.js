@@ -9,7 +9,8 @@ import SignUpForm from "./Components/User/Login/Signin";
 import Screen from "./Components/User/pages/homecontent/Homepage";
 import Doctorlogin from "./Components/User/Login/Doctorlogin";
 import About from "./Components/User/pages/About/About";
-
+// import Appointment from "./Components/User/pages/Doctor/Appointment";
+import Form from "./Components/User/pages/Doctor/Form";
 import { useState} from "react";
 
 
@@ -33,6 +34,8 @@ function App() {
                 <Route path="/SignUp" Component={SignUpForm} />
                 <Route path="/about" Component={About} />
                 <Route path="/doctor" Component={Doctor} />
+                {/* <Route path="/appointment" Component={Appointment} /> */}
+                <Route path="/form/:id" Component={Form} />
                </Routes>
 
            </Box>
