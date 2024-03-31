@@ -1,3 +1,4 @@
+
 import { DataGrid } from '@mui/x-data-grid';
 import { Button, TextField } from '@mui/material';
 import axios from 'axios';
@@ -123,7 +124,7 @@ export default function Users() {
       headerName: 'User Name',
       width: 150,
       renderCell: (params) => {
-        // console.log(params ${JSON.stringify(params)})
+        // console.log(`params ${JSON.stringify(params)}`)
         // const userName = params.row.user.username;
         const randomIndex = Math.floor(Math.random() * namesArray.length);
         return namesArray[randomIndex];
@@ -144,7 +145,7 @@ export default function Users() {
     //   width: 100,
     //   renderCell: (params) => (
     //     <span>
-    //       {params.row.status === 'checked' ? '✔' : 'Pending'}
+    //       {params.row.status === 'checked' ? '✔️' : 'Pending'}
     //     </span>
     //   ),
     // },
@@ -215,3 +216,10 @@ export default function Users() {
     </>
   );
 }
+
+
+
+
+
+
+
