@@ -17,13 +17,15 @@ import Form from "./Components/User/pages/Doctor/Form";
 import Doctorlogin from "./Components/User/Login/Doctorlogin";
 
 import { useState} from "react";
-
+import Dashboard from "./Components/Admin/Dashboard";
 import PagenotFound from "./Components/User/pages/PagenotFound";
 import Appointment from "./Components/User/pages/Doctor/Appointment";
 import Room from "./Components/User/pages/Doctor/Room";
 import DDashboard from "./Components/Doctor/Dashboard";
 import UserProfile from "./Components/User/pages/userProfile";
 
+// import AmbulanceBooking from "./Components/User/pages/Ambulance";
+// import { isDate } from "moment";
 
 function App() {
   const [is_admin, setIsAdmin] = useState(localStorage.getItem("is_admin"));
@@ -31,7 +33,7 @@ function App() {
 
   console.log(is_doctor)
 
-
+  console.log(`is admin ${is_admin}`)
 
 
 
@@ -44,7 +46,11 @@ function App() {
         <Grid item xs={12}>
          <DDashboard />
         </Grid>
-      ):(
+      ):is_admin  ? (
+        <Grid item xs={12}>
+          <Dashboard />
+        </Grid>
+      ) : (
         <>
           <Grid item xs={12} >
             <Navbar sx={{ backgroundColor:"#acb2bd"}} />
@@ -68,7 +74,7 @@ function App() {
               <Route path="/form/:id" Component={Form} />
                  <Route path="/appointment" Component={Appointment} />
                  <Route path="/room/:roomID" Component={Room} />
-                 
+                 {/* <Route path="/ambulance-booking" Component={AmbulanceBooking} /> */}
                  <Route path="/report/:id" Component={Report} />
                   <Route path="/userprofile" Component={UserProfile} />
                 </Route>
