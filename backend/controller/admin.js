@@ -46,6 +46,7 @@ const delete_doctor = async (req, res) => {
     }
 }
 const user_query = async (req, res) => {
+    // console.log();
     try {
         const allQuery = await pquery.find({}).select("-__v ");
         return res.status(200).json(allQuery);
