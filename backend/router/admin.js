@@ -16,3 +16,4 @@ admin_router.get("/single/:id",auth_middleware, role_check, admin_contoller.sing
 
 
 module.exports = admin_router;
+// module.export
