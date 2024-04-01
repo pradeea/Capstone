@@ -27,7 +27,7 @@ const AddDoctorForm = ({fetchdata}) => {
   const [password, setPassword] = useState('');
   const [desc, setDesc] = useState('');
   const [ammount, seAmmount] = useState('');
-
+  const [doctVal,setDocVal] = useState("");
 
   const date = selectdate.map(option => option.value);
 
@@ -36,7 +36,10 @@ const AddDoctorForm = ({fetchdata}) => {
     updatedExpertise[index] = value;
     setExpertise(updatedExpertise);
   };
-
+  const adDoct =() =>{
+    console.log(`Add doctor succesfully done`);
+    setDocVal(doctVal+1);
+    }
   const handleAddExpertise = () => {
     setExpertise([...expertise, '']);
   };
