@@ -67,7 +67,7 @@ const columns = [
   //   width: 70,
   //   renderCell: (params) => {
   //     const handleDetails = async () => {
-  //     //  navigate(/doctordetails/${params.row._id})
+  //     //  navigate(`/doctordetails/${params.row._id}`)
 
   //     console.log(params.row._id)
        
