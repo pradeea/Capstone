@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2e4854f1.css",
+    "main.js": "/static/js/main.c6315362.js",
+    "static/media/h1_hero.png": "/static/media/h1_hero.5f5c4f952ac4c8b7a259.png",
+    "static/media/doctor-group.png": "/static/media/doctor-group.01394386d8270bd40bc1.png",
+    "static/media/twitter.svg": "/static/media/twitter.50ae75549efb8b5f82434a106ab5314c.svg",
+    "static/media/linkedin.svg": "/static/media/linkedin.ba6faa793e70a8a440b0d06d13345f48.svg",
+    "index.html": "/index.html",
+    "static/media/facebook.svg": "/static/media/facebook.4df423c03ddfd28a7b076c47a0d89ad6.svg",
+    "main.2e4854f1.css.map": "/static/css/main.2e4854f1.css.map",
+    "main.c6315362.js.map": "/static/js/main.c6315362.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2e4854f1.css",
+    "static/js/main.c6315362.js"
+  ]
+}
