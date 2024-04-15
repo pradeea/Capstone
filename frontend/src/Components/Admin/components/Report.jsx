@@ -6,7 +6,7 @@ import axios from 'axios';
 function Report() {
 
     const { id } = useParams();
-    console.log(id)
+    console.log(id);
     const [data,setDatas] = useState();
   const [patientName, setPatientName] = useState('');
   const [doctorName, setDoctorName] = useState('');
