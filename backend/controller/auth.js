@@ -6,6 +6,8 @@ const doctor = require('../model/doctor');
 const { default: mongoose } = require('mongoose');
 
 const signin = async (req, res) => {
+      // console.log(`user api`);
+    //     console.log(`user api`);
     try {
         const { username, password } = req.body;
         if (!username | !password) {
