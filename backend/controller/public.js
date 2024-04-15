@@ -13,6 +13,8 @@ const get_doctor= async(req, res)=>{
 
 const get_single_doctor=async(req,res)=>{
   const {id}=req.params
+      // console.log(`user api`);
+    //     console.log(`user api`);
   try{
       const data=await doctor.findById(id)
       if(!data)
