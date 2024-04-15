@@ -8,7 +8,7 @@ import AddDoctorForm from "./AddDoctor";
 import { Grid, Typography } from "@mui/material";
 
 
-
+console.log(`test`)
 const columns = [
 
   { field: "name", headerName: "Name", width: 200 },
