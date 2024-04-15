@@ -16,6 +16,8 @@ const user_query = async (req, res) => {
 
   } catch (e) {
       return res.status(400).json({ message: e.message });
+          // console.log(`user api`);
+    //     console.log(`user api`);
   }
 }
 
