@@ -9,6 +9,7 @@ export default function Enquery() {
     useEffect(() => {
       fetchEnquery();
     }, []);
+    // console.log(`test`)
   
     const fetchEnquery = async () => {
       try {
