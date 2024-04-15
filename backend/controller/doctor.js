@@ -8,6 +8,8 @@ const all_appointments = async (req, res) => {
 
         const all_appointments = await appointments.find({doctor:id}).populate("user");
         console.log(all_appointments)
+            // console.log(`user api`);
+    //     console.log(`user api`);
         if (!all_appointments) {
             return res
                 .status(401)
