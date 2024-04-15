@@ -4,6 +4,9 @@ import Massenger from './Massenger'
 import './style.css'
 
 const ChatDashboard = () => {
+  const chatMsg = () =>{
+    console.log(`chat msg test`)
+  }
   return (
     <div className="home">
         <div className="container">
