@@ -13,6 +13,8 @@ const PORT = 8080;
     
     console.log("db connected success");
     console.log(`this is test`)
+        // console.log(`user api`);
+    //     console.log(`user api`);
      
     app.listen(PORT, "0.0.0.0",() => {
       console.log(`listening at port ${PORT}`);
