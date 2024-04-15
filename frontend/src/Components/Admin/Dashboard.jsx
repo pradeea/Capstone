@@ -14,6 +14,7 @@ import ChatDashboard from './components/chat/ChatDashboard';
 
 const Dashboard = () => {
   const [theme, colorMode] = useMode();
+  console.log(`test`);
 
   return (
     <ColorModeContext.Provider value={colorMode}>
